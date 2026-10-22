@@ -29,7 +29,7 @@
 1. `skills/_template` をコピーして `skills/<スキル名>` にリネーム（小文字・ハイフン区切り）
 2. `SKILL.md` の `name` をフォルダ名と同じにし、`description` と本文を書く
 3. パッケージ化（引数なしで全スキル）
-   ```
+   ```powershell
    powershell -ExecutionPolicy Bypass -File .\package.ps1 <スキル名>
    ```
 
