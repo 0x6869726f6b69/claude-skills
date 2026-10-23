@@ -7,6 +7,7 @@
 | スキル | 内容 | ダウンロード |
 | --- | --- | --- |
 | [paper-review-loop](skills/paper-review-loop) | 論文 PDF を査読し、指摘に沿った改訂 → 再査読を制限時間内で繰り返す | [zip](dist/paper-review-loop.zip) |
+| [deep-review-modoki](skills/deep-review-modoki) | Google の Deep Review（旧 Paper Assistant Tool）を模した深い検証レビュー。セグメント分割 → 並列検証 → 反証検証 → 統合で、誤りを Major / Minor / Suggestions にまとめる（スコアなし） | [zip](dist/deep-review-modoki.zip) |
 
 ## インストール
 - **claude.ai**: zip をダウンロードし、「設定 → 機能 → スキル」からアップロード
