@@ -1,4 +1,4 @@
-# claude-skills-researchreview
+# claude-skills
 
 研究・論文執筆向けの Claude スキル集です。
 
@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | [paper-review-loop](skills/paper-review-loop) | 論文 PDF を査読し、指摘に沿った改訂 → 再査読を制限時間内で繰り返す | [zip](dist/paper-review-loop.zip) |
 | [deep-review-modoki](skills/deep-review-modoki) | Google の Deep Review（旧 Paper Assistant Tool）を模した深い検証レビュー。セグメント分割 → 並列検証 → 反証検証 → 統合で、誤りを Major / Minor / Suggestions にまとめる（スコアなし） | [zip](dist/deep-review-modoki.zip) |
+| [review2revise-loop](skills/review2revise-loop) | Review2Revise-loop。`/review2revise-loop <投稿先>` で、投稿先の aims & scope を調べ、deep-review-modoki の査読 → 自動改訂 → 追加実験（事前登録）と Figure/Table/本文への反映 → 再査読を、Major がなくなるか収束するまで反復する。scientific core（研究課題・中心アイデア・主要手法）の変更は人間に確認する。**deep-review-modoki が必要** | [zip](dist/review2revise-loop.zip) |
 
 ## インストール
 
