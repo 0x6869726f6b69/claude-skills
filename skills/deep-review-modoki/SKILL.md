@@ -235,6 +235,15 @@ python <skill_dir>/scripts/deep_review.py render <ws>
 - **改訂版の再レビュー**：新しい PDF で 1 から通す（`init` は新しい作業フォルダで）。統合担当の依頼文に前回の `findings.json` のパスを加え、`previous` に対応状況を書かせる
 - **中断からの再開**：作業フォルダにあるファイル（segments.json → plan.json の `[done]` → merged.json → verdicts/ → collated.json → findings.json）を見て、最後に完了した工程の次から続ける。`init --force` は前回の結果を消すので、やり直したいときだけ使う
 
+## 他のスキルから呼ばれたとき
+
+review2revise-loop などが、反復の中の査読工程としてこのスキルを呼ぶことがある。呼び出し側が入力・作業フォルダ（`--ws`）・深さ・焦点・投稿先・前回の findings.json を指定していれば：
+
+- §0 の質問はしない。指定された値を使う
+- §1〜§6 をそのまま行い、`findings.json`・`report.md`・`report.html` を作る。前回の findings.json が指定されていれば、統合担当の依頼文に加えて `previous` を書かせる
+- §7 の報告は「Major / Minor / Suggestions の件数」の一行だけにして呼び出し側に戻る。次の一手の提案はしない
+- 査読の基準・深さ・件数の上限は通常と同じ。呼び出し側の都合で緩めない
+
 ## サブエージェントが使えない環境
 
 工程は同じで、各タスクを自分で順に行う。独立性が落ちるので次を守る。
