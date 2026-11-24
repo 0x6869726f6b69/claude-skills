@@ -11,6 +11,7 @@
 | [review2revise-loop](skills/review2revise-loop) | Review2Revise-loop。`/review2revise-loop <投稿先>` で、投稿先の aims & scope を調べ、deep-review-modoki の査読 → 自動改訂 → 追加実験（事前登録）と Figure/Table/本文への反映 → 再査読を、Major がなくなるか収束するまで反復する。scientific core（研究課題・中心アイデア・主要手法）の変更は人間に確認する。**deep-review-modoki が必要** | [zip](dist/review2revise-loop.zip) |
 | [nature-figure-composer](skills/nature-figure-composer) | 分析結果（グラフ画像・CSV/NPZ・解析スクリプト）を Nature 系ジャーナル水準の多パネル Figure / Table / Caption にまとめる。起動後に「どの結果を1枚にまとめるか」を確認し、おまかせなら What → How → Why → Performance → Impact のストーリーで結果の取捨選択・配置・配色まで設計する。89/183 mm 幅・Arial 5–7 pt・意味を固定した配色のベクター PDF/SVG を作り、自動 QA（文字サイズ・重なり・余白・色覚シミュレーション）まで行う。**Python（matplotlib, PyMuPDF）が必要** | [zip](dist/nature-figure-composer.zip) |
 | [academic-writing-loop](skills/academic-writing-loop) | 英語論文 PDF の英文校正。Olson『Guide to Academic and Scientific Publication』に基づくチェックリストで、修正案つきレポートと赤入れ PDF を作る。`/academic-writing-loop 1回校正 <PDF>` で1回校正、`/academic-writing-loop loop <PDF>` で校正 → 原稿（LaTeX）に反映して PDF を再生成 → 再校正を、指摘が無くなるまで繰り返す。**Python（PyMuPDF）、loop は LaTeX が必要** | [zip](dist/academic-writing-loop.zip) |
+| [rebuttal-phrasebook](skills/rebuttal-phrasebook) | 査読への返信（rebuttal）の Opening Statement・General Response・個別返信の書き出しと結び・期間中の追加メッセージを、OpenReview で公開された実際の査読対応（General Response 約 1.7 万件・個別返信約 12.5 万件）から集計したフレーズ集で提案し、手元の査読と改訂内容に合わせて下書きを作る。各フレーズに使用頻度と、採択・スコア上昇との関係（相関）を添える。投稿先・年度ごとの形式（General Response の有無、文字数制限）に合わせて構成を変える | [zip](dist/rebuttal-phrasebook.zip) |
 
 ## インストール
 
